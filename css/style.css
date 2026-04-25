@@ -1,0 +1,226 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0b0b12;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #a855f7;
+}
+
+.logo {
+  font-weight: bold;
+  color: #a855f7;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 60px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-intro {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.hero p {
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: #a855f7;
+}
+
+.btn {
+  background: linear-gradient(45deg, #9333ea, #a855f7);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HERO CARD */
+.hero-card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* TIMELINE */
+.timeline-item {
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* DOWNLOAD */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.download-card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #6b21a8, #9333ea);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* TEAM */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact button {
+  background: #9333ea;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 25px;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .grid,
+  .download-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 100px 25px;
+  }
+}
