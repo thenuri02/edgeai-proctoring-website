@@ -357,3 +357,60 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.email-icon {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.email-icon:hover {
+  color: #00e5ff;   /* cyan glow */
+  transform: scale(1.2);
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes icon to right */
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-row strong {
+  min-width: 120px;   /* align all names nicely */
+}
+
+.email-text {
+  color: #b3e5fc;
+  text-decoration: none;
+}
+
+.email-text:hover {
+  text-decoration: underline;
+  color: #00e5ff;
+}
+
+.gmail-icon img {
+  width: 18px;
+  height: 18px;
+  transition: 0.3s;
+}
+
+.gmail-icon img:hover {
+  transform: scale(1.2);
+}
+
+.contact-info {
+  width: 60%;          /* takes half-ish page */
+  margin: 0 auto;      /* center horizontally */
+  padding: 25px 30px;  /* more inner space */
+}
+
+.email-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
